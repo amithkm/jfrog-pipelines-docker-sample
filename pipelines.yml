@@ -2,7 +2,7 @@ resources:
   - name: myrepo
     type: GitRepo
     configuration:
-      gitProvider: amith_git1   # replace with your integration
+      gitProvider: jfrogpipelines_pipelinesample   # replace with your integration
       path: amithkm/jfrog-pipelines-docker-sample    # replace with your repository name
       branches:
         include: master
