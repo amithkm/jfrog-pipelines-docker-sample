@@ -30,7 +30,7 @@ pipelines:
           dockerImageName: alpine/terragru  # replace with your image path and name
           dockerImageTag: ${run_number}
           inputResources:
-            - name: dbp_repo
+            - name: jfrog-pipelines-docker-sample
           integrations:
             - name: satheeshart    # replace with your artifactory integration
 
