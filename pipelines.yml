@@ -19,7 +19,7 @@ resources:
 pipelines:
   - name: pipeline_dbp
     configuration:
-      nodePool: u18-static
+      nodePool: default-dynamic-nodepool
     steps:
       - name: docker_build
         type: DockerBuild
