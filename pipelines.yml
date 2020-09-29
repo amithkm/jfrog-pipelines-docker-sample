@@ -1,5 +1,5 @@
 resources:
-  - name: dbp_repo
+  - name: jfrog-pipelines-docker-sample
     type: GitRepo
     configuration:
       gitProvider: amith_git1   # replace with your integration
