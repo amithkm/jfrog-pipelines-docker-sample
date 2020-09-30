@@ -38,7 +38,7 @@ pipelines:
         type: DockerPush
         configuration:
           affinityGroup: dbp_group
-          targetRepository: satheeshart-amithkm-docker-virtual.jfrog.io
+          targetRepository: amithkm-docker-virtual
           integrations:
             - name: satheeshart    # replace with your artifactory integration
           inputSteps:
