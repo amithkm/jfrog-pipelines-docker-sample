@@ -12,7 +12,7 @@ resources:
     configuration:
       registry: satheeshart      # replace with your artifactory integration
       sourceRepository: docker-local   # required if registry is Artifactory
-      imageName: satheeshart-docker-local.jfrog.io/alpine/terragru  # replace with your image path and name
+      imageName: satheeshart-docker-local.jfrog.io/alpine/terragrunt  # replace with your image path and name
       imageTag: latest
       autoPull: true
 
@@ -27,7 +27,7 @@ pipelines:
           affinityGroup: dbp_group
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: satheeshart-docker-local.jfrog.io/alpine/terragru  # replace with your image path and name
+          dockerImageName: satheeshart-docker-local.jfrog.io/alpine/terragrunt  # replace with your image path and name
           dockerImageTag: ${run_number}
           inputResources:
             - name: myrepo
