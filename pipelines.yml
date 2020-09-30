@@ -13,7 +13,7 @@ resources:
       registry: satheeshart      # replace with your artifactory integration
       sourceRepository: amithkm-docker-virtual   # required if registry is Artifactory
       imageName: satheeshart-amithkm-docker-virtual.jfrog.io/alpine/terragru # replace with your image path and name
-      imageTag: 0.12.26
+      imageTag: latest
       autoPull: true
 
 pipelines:
@@ -28,7 +28,7 @@ pipelines:
           dockerFileLocation: .
           dockerFileName: Dockerfile
           dockerImageName: satheeshart-amithkm-docker-virtual.jfrog.io/alpine/terragru  # replace with your image path and name
-          dockerImageTag: 0.12.26
+          dockerImageTag: ${run_number}
           inputResources:
             - name: myrepo
           integrations:
