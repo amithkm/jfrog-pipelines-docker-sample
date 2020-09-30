@@ -12,7 +12,7 @@ resources:
     configuration:
       registry: satheeshart      # replace with your artifactory integration
       sourceRepository: amithkm-docker-virtual   # required if registry is Artifactory
-      imageName: satheeshart-amithkm-docker-virtual.jfrog.io/alpine/terragrunt  # replace with your image path and name
+      imageName: alpine/terragrunt  # replace with your image path and name
       imageTag: latest
       autoPull: true
 
