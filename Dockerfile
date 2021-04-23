@@ -1,13 +1,7 @@
-FROM alpine/terragrunt:0.12.26
+FROM ubuntu:18.04
+ADD . /
+RUN chmod +x /install.sh
 
-# Install dependencies
-RUN apk add python3
-RUN apk update
-RUN pip3 install boto3
-RUN pip3 install awscli
-RUN apk add jq
-RUN apk add curl
-RUN curl -fL https://getcli.jfrog.io | sh
-RUN mv jfrog /usr/local/bin
-RUN apk add --update openssl
-RUN apk add gettext
+RUN /install.sh && rm -rf /tmp && mkdir /tmp && chmod 1777 /tmp
+
+ENV BASH_ENV "/etc/drydock/.env"
