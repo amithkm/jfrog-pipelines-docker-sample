@@ -12,7 +12,7 @@ resources:
     configuration:
       registry: nagarjunarttoken      # replace with your artifactory integration
       sourceRepository: docker   # required if registry is Artifactory
-      imageName: swarnenduk-docker.jfrog.io/artifactory/alpine/terragru # replace with your image path and name
+      imageName: swarnenduk-docker.jfrog.io/alpine/terragru # replace with your image path and name
       imageTag: latest
       autoPull: true
 
