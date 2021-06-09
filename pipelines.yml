@@ -40,7 +40,7 @@ pipelines:
           affinityGroup: dbp_group
           targetRepository: docker
           integrations:
-            - name: swarnenduk    # replace with your artifactory integration
+            - name: nagarjunarttoken    # replace with your artifactory integration
           inputSteps:
             - name: docker_build
           outputResources:
