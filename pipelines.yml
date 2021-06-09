@@ -2,7 +2,7 @@ resources:
   - name: myrepo
     type: GitRepo
     configuration:
-      gitProvider: jfrogpipelines_pipelinesample   # replace with your integration
+      gitProvider: nagarjuntestpipelinegit   # replace with your integration
       path: amithkm/jfrog-pipelines-docker-sample    # replace with your repository name
       branches:
         include: master
@@ -10,7 +10,7 @@ resources:
   - name: dbp_image_1
     type: Image
     configuration:
-      registry: satheeshart      # replace with your artifactory integration
+      registry: nagarjunarttoken      # replace with your artifactory integration
       sourceRepository: docker   # required if registry is Artifactory
       imageName: swarnenduk-docker.jfrog.io/alpine/terragru # replace with your image path and name
       imageTag: latest
