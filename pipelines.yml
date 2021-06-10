@@ -32,7 +32,7 @@ pipelines:
           inputResources:
             - name: myrepo
           integrations:
-            - name: nagarjunarttoken    # replace with your artifactory integration
+            - name: dockerart    # replace with your artifactory integration
 
       - name: docker_push
         type: DockerPush
@@ -40,7 +40,7 @@ pipelines:
           affinityGroup: dbp_group
           targetRepository: docker
           integrations:
-            - name: nagarjunarttoken    # replace with your artifactory integration
+            - name: dockerart    # replace with your artifactory integration
           inputSteps:
             - name: docker_build
           outputResources:
